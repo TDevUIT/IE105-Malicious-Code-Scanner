@@ -1,39 +1,39 @@
 <p align="center">
-  <a href="https://malicious-code-scanner.vercel.app/">
-    <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
+  <a href="https://ie-105-malicious-code-scanner.vercel.app/">
+    <img src="https://github.com/user-attachments/assets/86d7edbe-df3f-4c3e-86b3-11f21bb11d5e" height="96" alt="QR code scan">
     <h3 align="center">Malicious Code Scanner</h3>
   </a>
 </p>
 
-<p align="center">A Next.js 14 application that utilizes machine learning models to detect malicious code in uploaded files, with FastAPI as the backend.</p>
+<p align="center">A Next.js 14 application that leverages machine learning models to detect malicious code in uploaded files, featuring a FastAPI backend.</p>
 
 <br/>
 
 ## Introduction
 
-The Malicious Code Scanner is a Next.js + FastAPI application that enables users to upload files in multiple formats and scan them for potential malicious code. The app provides a clean, dashboard-like UI for model selection, upload progress, and result displays. It is ideal for developers and security teams who need to quickly assess file safety using custom models.
+The **Malicious Code Scanner** is a robust web app developed using Next.js and FastAPI, designed to enable users to upload files in various formats and scan for potential malicious code. It features a user-friendly, dashboard-like UI for selecting models, monitoring upload progress, and displaying scan results. This tool is ideal for developers and security teams needing quick, reliable file safety assessments using custom AI/ML models.
 
 ## How It Works
 
-The backend Python/FastAPI server runs AI/ML models and is integrated with the Next.js app under the `/api/` endpoint. Model-based scans can be triggered by file uploads, and the results are displayed in an intuitive dashboard format.
+The Python/FastAPI backend handles the AI/ML models, seamlessly integrated with the Next.js frontend through `/api/` endpoints. File uploads trigger model-based scans, with results presented in a structured dashboard format.
 
-The integration is handled through [`next.config.js` rewrites](https://github.com/vanthaita/malicious-code-scanner/blob/main/next.config.js), routing requests to `/api/py/:path*` directly to FastAPI.
+The integration is facilitated through [`next.config.js` rewrites](https://github.com/vanthaita/malicious-code-scanner/blob/main/next.config.js), routing requests to `/api/py/:path*` directly to FastAPI.
 
-On localhost, the FastAPI server runs at `127.0.0.1:8000`, while in production, it is hosted as [Python serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on Vercel.
+Locally, the FastAPI server runs at `127.0.0.1:8000`, while in production, it operates as [serverless Python functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on Vercel.
 
 ## Demo
 
-https://malicious-code-scanner.vercel.app/
+Explore the live demo here: [Malicious Code Scanner](https://ie-105-malicious-code-scanner.vercel.app/)
 
 ## Deploy Your Own
 
-You can clone & deploy it to Vercel with one click:
+Clone & deploy it to Vercel in one click:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvanthaita%2Fmalicious-code-scanner%2Ftree%2Fmain)
 
 ## Developing Locally
 
-Clone and create the repository with the following command:
+Set up the repository with:
 
 ```bash
 npx create-next-app malicious-code-scanner --example "https://github.com/vanthaita/IE105-Malicious-Code-Scanner.git"
@@ -60,11 +60,11 @@ yarn
 pnpm install
 ```
 
-For the backend, install Python packages in `requirements.txt`.
+For the backend, install Python packages listed in `requirements.txt`.
 
 ### 3. Run the development server
 
-Start the server with:
+Start the development server:
 
 ```bash
 npm run dev
@@ -74,20 +74,20 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the app, while the FastAPI server is available at [http://127.0.0.1:8000](http://127.0.0.1:8000). Update the port in `package.json` and `next.config.js` as needed.
+Access the app at [http://localhost:3000](http://localhost:3000), with the FastAPI backend running at [http://127.0.0.1:8000](http://127.0.0.1:8000). Update the port in `package.json` and `next.config.js` as needed.
 
 ## Key Features
 
-- **File Uploads**: Supports PDF and other common formats.
-- **Model Selection**: Choose from multiple models (in `.h5` format) for scanning.
-- **Progress & Results Display**: Track scan progress and view results in a dashboard format with graphical displays.
+- **File Uploads**: Supports PDF and other common file formats.
+- **Model Selection**: Allows users to choose from multiple models (in `.h5` format) for scanning.
+- **Progress & Results Display**: Visualize scan progress and results in a dashboard format with graphical displays.
 
 ## Learn More
 
-To learn more about Next.js and FastAPI, check out:
+For further resources, check out:
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 
 We welcome your feedback and contributions via [our GitHub repository](https://github.com/vanthaita/malicious-code-scanner)!
-
+```
